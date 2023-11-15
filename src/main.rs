@@ -22,7 +22,7 @@ fn main() {
     dbg!(img.width());
     dbg!(img.height());
 
-    img = img.resize_exact(args.width, args.height, image::imageops::FilterType::Gaussian);
+    img = img.resize_exact(args.width, args.height, image::imageops::FilterType::Lanczos3);
     dbg!(img.width());
     dbg!(img.height());
 
